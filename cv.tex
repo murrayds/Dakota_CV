@@ -1,0 +1,219 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Dakota Murray - vita},
+	pdfauthor={Dakota Murray},
+	pdfproducer={http://dakotamurray.me}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Dakota S. Murray}\\[0.5cm]
+Phone: \texttt{+1 (828) 691 5724}\\
+email: \href{mailto:dakmurra@iu.edu}{dakmurra@iu.edu}; \href{mailto:dakota.s.murray@gmail.com}{dakota.s.murray@gmail.com}\\
+\textsc{url}: \href{http://www.dakotamurray.me}{http://www.dakotamurray.me}\\ 
+\textsc{Orcid id:}  \href{http://orcid.org/0000-0002-7119-0169}{0000-0002-7119-0169}\\
+\textsc{github:}  \href{https://github.com/murrayds}{https://github.com/murrayds}
+
+
+\section*{Current position}
+\emph{Associate Instructor}, School of Informatics, Computing, and Engineering, Bloomington
+
+\section*{Areas of specialization}
+Science of Science • Data Science • Science and Technology Studies • Scholarly Communication
+ 
+\section*{Education}
+\noindent
+\years{2012-present}\textsc{Ph.D.} in Informatics, \textit{Computing, Culture, and Society}, Doctoral minor in Statistics\\
+\textit{advisor: Dr. Cassidy R. Sugimoto}\\
+School of Informatics, Computing, and Engineering\\
+Indiana University Bloomington\\
+\\
+\years{2012-2016}\textsc{B.S.} in Computer Science\\
+\textit{advisor: Dr. Mitch Parry}\\
+\textit{Summa Cum Laude} and with departmental honors\\
+Appalachian State University
+
+
+%%\hrule
+\section*{Appointments and employment}
+\noindent
+\years{2018-present}\emph{Associate Instructor}\\
+School of Informatics, Computing, and Engineering, Indiana University Bloomington\\
+\years{2016-2018}\emph{Research Assistant}\\
+School of Informatics, Computing, and Engineering, Indiana University Bloomington\\
+\years{2015-2016}\emph{Research Assistant}\\
+Department of Computer Science, Appalachian State University\\
+\years{2015}\emph{NIFS Student Intern}\\
+NASA Langley Research Center\\
+\years{2013}\emph{Web Developer/Research Assistant}\\
+Department of Computer Science, Appalachian State University\\
+
+\section*{Publications}
+
+\subsection*{Journal articles}
+\years{2018}Robinson-García, N., Sugimoto, C. R., \textbf{Murray, D.}, Yegros-Yegros, A., Larivière, V., \& Costas, R. (2018). Scientific mobility indicators in practice: International mobility profiles at the country level. El Profesional de La Información, 27(3), 511. https://doi.org/10.3145/epi.2018.may.05 \\
+
+\years{2018}Robinson-Garcia, N., Sugimoto, C. R., \textbf{Murray, D.}, Yegros-Yegros, A., Larivière, V., \& Costas, R. (2018). Scientific mobility indicators in practice: International mobility profiles at the country level. El Profesional de La Información, 27(3), 511. https://doi.org/10.3145/epi.2018.may.05\\
+
+\years{2018}Bu, Y., Ding, Y., Liang, X., \& \textbf{Murray, D. S. }(2018). Understanding persistent scientific collaboration. Journal of the Association for Information Science and Technology, 69(3), 438–448. https://doi.org/10.1002/asi.23966\\
+
+\years{2018}Bu, Y., \textbf{Murray, D. S.}, Ding, Y., Huang, Y., \& Zhao, Y. (2018). Measuring the stability of scientific collaboration. Scientometrics, 114(2), 463–479. https://doi.org/10.1007/s11192-017-2599-0\\
+
+\years{2018}Chinchilla-Rodríguez, Z., Miao, L., \textbf{Murray, D.}, Robinson-García, N., Costas, R., \& Sugimoto, C. R. (2018). A Global Comparison of Scientific Mobility and Collaboration According to National Scientific Capacities. Frontiers in Research Metrics and Analytics, 3. https://doi.org/10.3389/frma.2018.00017\\
+
+\years{2017}Sugimoto, C. R., Robinson-Garcia, N., \textbf{Murray, D. S.}, Yegros-Yegros, A., Costas, R., \& Larivière, V. (2017). Scientists have most impact when they’re free to move. Nature, 550(7674), 29–31. https://doi.org/10.1038/550029a\\
+
+\subsection*{Indexed conference proceddings}
+\noindent
+\years{2017}Das, S., Goard, J., \& \textbf{Murray, D.} (2017), How Celebrities Feed Tweeples with Personal and Promotional Tweets: Celebrity Twitter Use and Audience Engagement. In Proceedings of the 8th International Conference on Social Media and Society (pp. 30:1–30:5). New York, NY, USA: ACM. https://doi.org/10.1145/3097286.3097316\\
+
+\subsection*{Other publications}
+\noindent
+
+\years{2018} Cassidy R. Sugimoto, \textbf{Dakota S. Murray}, and Vincent Larivière (April 26, 2018), "Open citations to open science", \emph{ISSI Blog}. Available at http://www.issi-society.org/blog/posts/2018/april/open-citations-to-open-science/\\
+
+\years{2017} Rodrigo Costas, Alfredo Yegros, Vincent Larivière, Cassidy Sugimoto, Nicolas Robinson-Garcia, \textbf{Dakota S. Murray} (October 5, 2017), "The global scientific brain: Policy implications of barriers to scientific mobility", \emph{CWTS Blog}. Available at https://www.cwts.nl/blog?article=n-r2r284\\
+\\
+
+\section*{Conference works \& talks}
+
+\subsection*{Refereed conference works}
+\years{2017}\textbf{Murray, D.}, Zhou, H., Minik, V., Larivière, V.,  Sugimoto, C. R., (2017). Are Great Researchers Terrible Teachers? How research and teaching performance relate at U.S. universities. ISSI2017. Wuhan, China\\
+\\
+\years{2017}Robinson-Garcia, N., Sugimoto, C.R., \textbf{Murray, D.}, Yegros-Yegros, A., Lariviere, V., \& Costas, R. (2017). Unveiling the multiple faces of mobility: Towards a taxonomy of scientific mobility types based on bibliometric data. STI2017. Paris, France.\\
+\\
+\years{2017}Chinchilla-Rodriguez, Z., Miao, L., \textbf{Murray, D.}, Robinson-Garcia, N., Costas, R., \& Sugimoto, C.R. (2017). A large-scale comparison of the position of countries in international collaboration and mobility according to their scientific capacities. STI2017. Paris, France.\\
+\\
+\years{2017}\textbf{Murray, D.}, Sugimoto, C.R., \& Lariviere, V. (2017). A balanced portfolio? The relationship between gender and funding for US academic professors. STI2017. Paris, France.\\
+\\
+\years{2017}Miao, L., \textbf{Murray, D.}, Chinchilla-Rodriguez, Z., Lariviere, V., \& Sugimoto, C.R. (2017). Glass boundaries: Differences in interdisciplinarity between men and women. STI2017. Paris, France.\\
+
+\subsection*{Panels and workshops}
+\years{2018}Zaida Chinchilla-Rodríguez, presented by \textbf{Dakota Murray }, (2018)Moving on up: the relationship between international mobility and global leadership. 4S, Sydney, Australia\\
+\\
+\years{2018}Cassidy Sugimoto, \textbf{Dakota Murray}, \&  Vincent Larivière, Accepted open panel, \emph{The Global Scientific Brain: International Mobility of the Scientific Workforce}, 4S Sydney, Sydney, Australia\\
+
+
+%\hrule
+\section*{Grants, honors \& awards}
+\noindent
+
+\subsection*{Grants and other funding}
+\years{2017-2018}IDEASc fellowship, sponsored by IMLS\\
+\years{2017} Cross-track collaboration grant, School of Informatics, Computing, and Engineering\\
+
+\subsection*{Academic awards}
+\years{2016}Graduated B.S. \emph{Summa Cum Laude} and with departmental honors\\
+\years{2012-2016} Chancellor's List (GPA > 3.85) for all semesters attending Appalachian State Univeristy\\
+\years{2012, 2013} NSF Academy of Science Scholarship at Appalachian State University\\
+
+\subsection*{Honors}
+\years{2017}Invited participant of Lorentz Center workshop \emph{Rethinking Impact Factors: New Pathways in Journal Metrics}\\
+\years{2015}Undergraduate student usher, representing department of Computer Science at 2015 Fall graduation ceremony at Appalachian State University
+
+\section*{Teaching}
+
+\subsection*{Indiana University Bloomington}
+\years{Fall 2018}Associate Instructor, Informatics Capstone I: Design and Development of an Information System\\
+
+\subsection*{Appalachian State University}
+\years{2015-2016}Computer Science Tutor, Appalachian State University\\
+\years{2013}Lab Assistant, Computer Science I and II
+
+\subsection*{Guest Lectures}
+\years{Spring 2018}Invited presenter and discussion leader in the \emph{Introduction to Informatics} course at Indiana University Bloomington\\
+
+%\hrule
+\section*{Service}
+
+\subsection*{Reviewing}
+(Year of first review):  \emph{Public Library of Science (PLoS) One}
+ (2017); \emph{Journal of Informetrics} (2017); \emph{Journal of the Association for Information Science \& Technology} (2017)
+
+\subsection*{School (Indiana Univeristy Bloomington)}
+\years{2017-2018}Representative, Graduate and Professional Student Government, Indiana University Bloomington\\
+\years{2017}Publicity Chair, Graduate Informatics Student Association, Indiana University Bloomington\\
+\years{2016}Social Chair, Graduate Informatics Student Association, Indiana University Bloomington\\
+
+\subsection*{Professional organizations}
+\years{2018 - present} Member, Society for the Social Studies of Sciences\\
+\years{2017 - present}Member, International Society for Scientometrics and Informetrics\\
+
+\section
+%\vspace{1cm}
+\vfill{}
+\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+\href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}}
+\end{center}
+
+\end{document}
